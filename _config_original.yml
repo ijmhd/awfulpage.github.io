@@ -7,17 +7,17 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Binzheng"
+title                    : "Dr. Binzheng Zhang"
 title_separator          : "-"
-name                     : &name "Dr. B ZHANG"
+name                     : &name "B. Zhang"
 description              : &description "personal description"
-url                      : https://tiegcm.github.io/tiegcm.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ijmhd.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "tiegcm/tiegcm.github.io"
+repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : false
+future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -80,23 +80,23 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dr. Binzheng Zhang"
+  name             : "Binzheng Zhang"
   avatar           : "profile.png"
-  bio              : "Scientist, Teacher, Geek"
+  bio              : "Teacher, Scientist, Geek"
   location         : "327 HOC Science Building"
-  employer         : "The University of Hong Kong"
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=AC8jpboAAAAJ"
-  email            : "BINZH@HKU.HK"
-  researchgate     : "https://www.researchgate.net/profile/Binzheng_Zhang"
+  employer         :
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            :
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
-  bitbucket        : "bzhang82"
+  bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "tiegcm"
+  github           : "academicpages"
   google_plus      :
   keybase          :
   instagram        :
@@ -109,11 +109,11 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
-  youtube          : 
+  youtube          :
   wikipedia        :
 
 
@@ -187,9 +187,7 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  codes:
-    output: true
-    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -215,15 +213,6 @@ defaults:
   - scope:
       path: ""
       type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-    # _codes
-  - scope:
-      path: ""
-      type: codes
     values:
       layout: single
       author_profile: true
@@ -276,7 +265,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-  - jemoji
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -284,6 +272,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
 
 # Archives
 #  Type
@@ -314,7 +303,7 @@ tag_archive:
 #     tag: /tags/:name/
 
 
-# HTML Compression 
+# HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
